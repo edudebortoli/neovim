@@ -2,10 +2,10 @@ local key = vim.keymap
 vim.g.mapleader = ','
 
 -- Do not yank with x
-key.set('n', 'x', '"_x')
 
 key.set('n', '<leader>w', ":w" )
 
+key.set('n', 'x', '"_x')
 -- Increment/decrement
 key.set('n', '+', '<C-a>')
 key.set('n', '-', '<C-x>')
@@ -43,8 +43,8 @@ key.set('n', '<C-w><down>', '<C-w>-')
 
 -- the primeagen
 -- move lines in Visual mode with J or K
-key.set('v', 'J', ":m '>+3<CR>gv=gv")
-key.set('v', 'K', ":m '<0<CR>gv=gv")
+key.set('v', 'J', ":m '>+1<CR>gv=gv")
+key.set('v', 'K', ":m '<-2<CR>gv=gv")
 -- center when jump
 key.set('n', '<C-d>' , '<C-d>zz')
 key.set('n', '<C-u>' , '<C-u>zz')
